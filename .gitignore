@@ -1,0 +1,28 @@
+# ============================================================
+# .gitignore — Archivos que NUNCA se suben al repositorio
+# (política de seguridad: sin contraseñas ni respaldos en Git)
+# ============================================================
+
+# Credenciales de la base de datos
+.env
+
+# Respaldos y registros
+*.tar.gz
+*.sql.gz
+*.log
+backups/
+
+# Configuración local de rclone (claves de Backblaze B2)
+rclone.conf
+
+# Credenciales de Git
+.git-credentials
+.netrc
+
+# Datos de MariaDB locales
+*.sock
+*.pid
+
+# Basura del editor
+*.swp
+.DS_Store
